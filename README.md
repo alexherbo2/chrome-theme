@@ -6,6 +6,12 @@
 
 ## Installation
 
+### Installing from the Chrome Web Store
+
+https://chrome.google.com/webstore/detail/theme/gkjbedlignbigngekgakalkegidmiiml
+
+### Installing from the source
+
 ``` sh
 make
 ```
