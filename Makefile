@@ -1,5 +1,5 @@
 fetch:
-	./fetch
+	scripts/fetch
 
 package: clean fetch
 	zip --recurse-paths package.zip manifest.json packages
@@ -15,4 +15,4 @@ chrome-web-store: fetch
 clean:
 	rm -Rf build packages package.zip 'Cached Theme.pak'
 
-.PHONY: fetch
+.PHONY: build
