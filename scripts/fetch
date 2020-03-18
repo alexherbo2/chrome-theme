@@ -16,9 +16,11 @@ fetch() {
   esac
 }
 
+# Ensure the base directory exists
 mkdir -p packages
 cd packages
 
+# Fetch packages
 fetch https://github.com/alexherbo2/orioto-wallpapers/raw/master/wallpapers/Cathodic-Precision.jpg
 fetch 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Chrome_icon_(September_2014).svg' chrome.svg
 fetch https://i.imgur.com/qdmo0XA.png preview.png
