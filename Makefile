@@ -6,7 +6,7 @@ package: clean fetch
 
 chrome-web-store: fetch
 	mkdir -p build/chrome-web-store
-	inkscape --without-gui packages/chrome.svg --export-png build/chrome-web-store/icon.png --export-width 128 --export-height 128
+	inkscape packages/chrome.svg --export-filename build/chrome-web-store/icon.png --export-width 128 --export-height 128
 	convert packages/preview.png -resize '1280x800!' build/chrome-web-store/preview.png
 	convert packages/preview.png -resize '440x280!' build/chrome-web-store/small-tile.png
 	convert packages/preview.png -resize '920x680!' build/chrome-web-store/large-tile.png
