@@ -2,7 +2,7 @@ fetch:
 	scripts/fetch
 
 package: clean fetch
-	zip -r package.zip manifest.json packages
+	zip -r package.zip .
 
 chrome-web-store: fetch
 	mkdir -p build/chrome-web-store
